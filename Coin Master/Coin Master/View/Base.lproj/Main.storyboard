@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Coin_Master" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="H7a-rz-qn3">
+                                <rect key="frame" x="0.0" y="54" width="390" height="155"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CoinMaster" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZaC-AS-cHs">
+                                        <rect key="frame" x="95" y="0.0" width="200" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="h66-wc-Vke"/>
+                                            <constraint firstAttribute="height" constant="50" id="pjf-ph-uda"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VIA-q6-6R2">
+                                        <rect key="frame" x="0.0" y="55" width="390" height="100"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="Ll7-gK-0DF">
+                                                <rect key="frame" x="0.0" y="0.0" width="380" height="100"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitecoin" translatesAutoresizingMaskIntoConstraints="NO" id="BlR-py-Pbu">
+                                                        <rect key="frame" x="0.0" y="5" width="90" height="90"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="90" id="K7y-1j-lZz"/>
+                                                            <constraint firstAttribute="height" constant="90" id="LFz-zF-xF0"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="0.0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="juz-s6-HiU">
+                                                        <rect key="frame" x="124.00000000000001" y="40" width="187.33333333333337" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEY-rg-H1x">
+                                                        <rect key="frame" x="345.33333333333331" y="40" width="34.666666666666686" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="Ll7-gK-0DF" secondAttribute="bottom" id="9La-XV-6t3"/>
+                                            <constraint firstItem="Ll7-gK-0DF" firstAttribute="leading" secondItem="VIA-q6-6R2" secondAttribute="leading" id="XFc-Xl-euZ"/>
+                                            <constraint firstAttribute="height" constant="100" id="Z6J-tD-uUv"/>
+                                            <constraint firstItem="Ll7-gK-0DF" firstAttribute="top" secondItem="VIA-q6-6R2" secondAttribute="top" id="udw-lV-7od"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ll7-gK-0DF" secondAttribute="trailing" constant="10" id="zkD-LW-M3b"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="VIA-q6-6R2" secondAttribute="trailing" id="kGP-d1-WtT"/>
+                                    <constraint firstItem="VIA-q6-6R2" firstAttribute="leading" secondItem="H7a-rz-qn3" secondAttribute="leading" id="sfA-0c-cbf"/>
+                                </constraints>
+                            </stackView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p8E-aR-J7E">
+                                <rect key="frame" x="0.0" y="650" width="390" height="194"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="194" id="gme-6u-hlV"/>
+                                </constraints>
+                            </pickerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.47058823529411764" green="0.59215686274509804" blue="0.6705882352941176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="p8E-aR-J7E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1LZ-YJ-pgn"/>
+                            <constraint firstItem="H7a-rz-qn3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ob9-od-XPR"/>
+                            <constraint firstAttribute="bottom" secondItem="p8E-aR-J7E" secondAttribute="bottom" id="RTp-Tt-ymA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="H7a-rz-qn3" secondAttribute="trailing" id="VTy-LJ-LM3"/>
+                            <constraint firstItem="H7a-rz-qn3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="W39-9R-aHb"/>
+                            <constraint firstItem="p8E-aR-J7E" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ayN-T6-3E1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="BitcoinCurrencyLabel" destination="VEY-rg-H1x" id="Oip-wO-zUT"/>
+                        <outlet property="bitcoinLabel" destination="juz-s6-HiU" id="a5K-ge-Nyx"/>
+                        <outlet property="currencyPicker" destination="p8E-aR-J7E" id="ePY-tH-RvV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="81.696428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bitecoin" width="3840" height="2160"/>
+    </resources>
+</document>
