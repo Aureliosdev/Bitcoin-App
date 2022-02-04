@@ -1,2 +1,2 @@
 # Bitcoin-App
-Shows Current value of bitcoin and other virtual money. Like Etherium, DogeCoin, LiteCoin and etc.
+Shows Current value of bitcoin. Im add in the near future other virtual coins. 
