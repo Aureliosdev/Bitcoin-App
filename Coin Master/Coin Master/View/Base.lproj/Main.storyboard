@@ -76,22 +76,51 @@
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="194" id="gme-6u-hlV"/>
                                 </constraints>
                             </pickerView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="h0a-e2-5y3">
+                                <rect key="frame" x="0.0" y="209" width="380" height="90"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="etherium" translatesAutoresizingMaskIntoConstraints="NO" id="bqP-zR-k8u">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="Sv0-Yz-6F4"/>
+                                            <constraint firstAttribute="height" constant="90" id="p1v-je-qiq"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="0.0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hZ-aU-zzp">
+                                        <rect key="frame" x="124.00000000000001" y="35" width="187.33333333333337" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aW8-j5-LIP">
+                                        <rect key="frame" x="345.33333333333331" y="35" width="34.666666666666686" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.47058823529411764" green="0.59215686274509804" blue="0.6705882352941176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="p8E-aR-J7E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1LZ-YJ-pgn"/>
+                            <constraint firstItem="h0a-e2-5y3" firstAttribute="top" secondItem="H7a-rz-qn3" secondAttribute="bottom" id="41d-nn-cf9"/>
                             <constraint firstItem="H7a-rz-qn3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ob9-od-XPR"/>
                             <constraint firstAttribute="bottom" secondItem="p8E-aR-J7E" secondAttribute="bottom" id="RTp-Tt-ymA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="H7a-rz-qn3" secondAttribute="trailing" id="VTy-LJ-LM3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h0a-e2-5y3" secondAttribute="trailing" constant="10" id="VXc-8F-9B7"/>
                             <constraint firstItem="H7a-rz-qn3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="W39-9R-aHb"/>
                             <constraint firstItem="p8E-aR-J7E" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ayN-T6-3E1"/>
+                            <constraint firstItem="h0a-e2-5y3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zrC-tl-Uqp"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="BitcoinCurrencyLabel" destination="VEY-rg-H1x" id="Oip-wO-zUT"/>
                         <outlet property="bitcoinLabel" destination="juz-s6-HiU" id="a5K-ge-Nyx"/>
                         <outlet property="currencyPicker" destination="p8E-aR-J7E" id="ePY-tH-RvV"/>
+                        <outlet property="etheriumCurrencyLabel" destination="aW8-j5-LIP" id="dLo-W2-wWH"/>
+                        <outlet property="etheriumLabel" destination="8hZ-aU-zzp" id="Cct-wj-OQW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -101,5 +130,6 @@
     </scenes>
     <resources>
         <image name="bitecoin" width="3840" height="2160"/>
+        <image name="etherium" width="1200" height="1200"/>
     </resources>
 </document>

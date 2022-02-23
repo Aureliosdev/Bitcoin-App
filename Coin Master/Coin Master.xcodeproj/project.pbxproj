@@ -15,6 +15,8 @@
 		D3986FCF27ACF69400CDB119 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3986FCD27ACF69400CDB119 /* LaunchScreen.storyboard */; };
 		D3986FD727AD0AD700CDB119 /* CoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3986FD627AD0AD700CDB119 /* CoinManager.swift */; };
 		D3986FD927AD1AA900CDB119 /* CoinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3986FD827AD1AA900CDB119 /* CoinData.swift */; };
+		D3E6CB3B27C60FCF00285F4E /* EtheriumManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E6CB3A27C60FCF00285F4E /* EtheriumManager.swift */; };
+		D3E6CB3D27C611BB00285F4E /* CoinDataEtherium.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E6CB3C27C611BB00285F4E /* CoinDataEtherium.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		D3986FD027ACF69400CDB119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3986FD627AD0AD700CDB119 /* CoinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
 		D3986FD827AD1AA900CDB119 /* CoinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinData.swift; sourceTree = "<group>"; };
+		D3E6CB3A27C60FCF00285F4E /* EtheriumManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtheriumManager.swift; sourceTree = "<group>"; };
+		D3E6CB3C27C611BB00285F4E /* CoinDataEtherium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataEtherium.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +80,9 @@
 			isa = PBXGroup;
 			children = (
 				D3986FD627AD0AD700CDB119 /* CoinManager.swift */,
+				D3E6CB3A27C60FCF00285F4E /* EtheriumManager.swift */,
 				D3986FD827AD1AA900CDB119 /* CoinData.swift */,
+				D3E6CB3C27C611BB00285F4E /* CoinDataEtherium.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -168,11 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3E6CB3B27C60FCF00285F4E /* EtheriumManager.swift in Sources */,
 				D3986FC727ACF69300CDB119 /* ViewController.swift in Sources */,
 				D3986FC327ACF69300CDB119 /* AppDelegate.swift in Sources */,
 				D3986FD927AD1AA900CDB119 /* CoinData.swift in Sources */,
 				D3986FD727AD0AD700CDB119 /* CoinManager.swift in Sources */,
 				D3986FC527ACF69300CDB119 /* SceneDelegate.swift in Sources */,
+				D3E6CB3D27C611BB00285F4E /* CoinDataEtherium.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
